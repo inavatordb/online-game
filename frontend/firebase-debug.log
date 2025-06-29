@@ -1,0 +1,171 @@
+[debug] [2025-06-29T20:37:13.705Z] ----------------------------------------------------------------------
+[debug] [2025-06-29T20:37:13.707Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\inava\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-29T20:37:13.707Z] CLI Version:   14.9.0
+[debug] [2025-06-29T20:37:13.708Z] Platform:      win32
+[debug] [2025-06-29T20:37:13.708Z] Node Version:  v22.14.0
+[debug] [2025-06-29T20:37:13.708Z] Time:          Sun Jun 29 2025 16:37:13 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-06-29T20:37:13.708Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-29T20:37:13.714Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-29T20:37:13.714Z] > authorizing via signed-in user (darisbrownseo@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\inava\online-game\frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-06-29T20:43:50.218Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:43:50.218Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:43:50.220Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-06-29T20:43:50.785Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-06-29T20:43:50.785Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project red-flags-relationship-goals (Red Flags Relationship Goals) 
+[info] 
+=== Firestore Setup
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2025-06-29T20:43:59.074Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:43:59.074Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:43:59.074Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/firestore.googleapis.com [none]
+[debug] [2025-06-29T20:43:59.074Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/firestore.googleapis.com x-goog-quota-user=projects/red-flags-relationship-goals
+[debug] [2025-06-29T20:43:59.776Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/firestore.googleapis.com 200
+[debug] [2025-06-29T20:43:59.776Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/firestore.googleapis.com [omitted]
+[info] +  firestore: required API firestore.googleapis.com is enabled 
+[debug] [2025-06-29T20:43:59.779Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:43:59.779Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:43:59.780Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/red-flags-relationship-goals/databases [none]
+[debug] [2025-06-29T20:44:00.435Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/red-flags-relationship-goals/databases 200
+[debug] [2025-06-29T20:44:00.435Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/red-flags-relationship-goals/databases {"databases":[{"name":"projects/red-flags-relationship-goals/databases/(default)","uid":"f8b0547c-2a78-434f-b5d5-37e0d6d8071a","createTime":"2025-06-21T05:37:47.418390Z","updateTime":"2025-06-21T05:37:47.418390Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-06-29T19:44:00.394212Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IIbZqsS/l44DMOmW5ZbAlY4D"}]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-06-29T20:44:33.854Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:44:33.854Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:44:33.856Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/red-flags-relationship-goals/releases pageSize=10&pageToken=
+[debug] [2025-06-29T20:44:34.557Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/red-flags-relationship-goals/releases 200
+[debug] [2025-06-29T20:44:34.558Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/red-flags-relationship-goals/releases {"releases":[{"name":"projects/red-flags-relationship-goals/releases/cloud.firestore","rulesetName":"projects/red-flags-relationship-goals/rulesets/b1ca2c0a-5fd5-489d-a016-27d963febb29","createTime":"2025-06-21T05:37:49.366696Z","updateTime":"2025-06-21T05:38:10.526088Z"}]}
+[debug] [2025-06-29T20:44:34.561Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:44:34.562Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:44:34.565Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/red-flags-relationship-goals/rulesets/b1ca2c0a-5fd5-489d-a016-27d963febb29 [none]
+[debug] [2025-06-29T20:44:34.728Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/red-flags-relationship-goals/rulesets/b1ca2c0a-5fd5-489d-a016-27d963febb29 200
+[debug] [2025-06-29T20:44:34.730Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/red-flags-relationship-goals/rulesets/b1ca2c0a-5fd5-489d-a016-27d963febb29 [omitted]
+[info] i  Downloaded the existing Firestore Security Rules from the Firebase console 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-06-29T20:45:03.313Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:03.314Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:03.314Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:03.314Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:03.314Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/red-flags-relationship-goals/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-06-29T20:45:03.316Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/red-flags-relationship-goals/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-06-29T20:45:03.728Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/red-flags-relationship-goals/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-06-29T20:45:03.730Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/red-flags-relationship-goals/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/red-flags-relationship-goals/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2025-06-29T20:45:03.763Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/red-flags-relationship-goals/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-06-29T20:45:03.764Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/red-flags-relationship-goals/databases/(default)/collectionGroups/-/indexes {}
+[info] i  Downloaded the existing Firestore indexes from the Firebase console 
+[info] +  Wrote firestore.rules 
+[info] +  Wrote firestore.indexes.json 
+[info] 
+=== Functions Setup
+[debug] [2025-06-29T20:45:03.824Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-29T20:45:03.828Z] > authorizing via signed-in user (darisbrownseo@gmail.com)
+[debug] [2025-06-29T20:45:03.831Z] [iam] checking project red-flags-relationship-goals for permissions ["firebase.projects.get"]
+[debug] [2025-06-29T20:45:03.843Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:03.844Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:03.846Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-flags-relationship-goals:testIamPermissions [none]
+[debug] [2025-06-29T20:45:03.848Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-flags-relationship-goals:testIamPermissions x-goog-quota-user=projects/red-flags-relationship-goals
+[debug] [2025-06-29T20:45:03.849Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-flags-relationship-goals:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-29T20:45:04.248Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-flags-relationship-goals:testIamPermissions 200
+[debug] [2025-06-29T20:45:04.250Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-flags-relationship-goals:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-29T20:45:04.257Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:04.258Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:04.261Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:04.262Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:04.278Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-06-29T20:45:04.279Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/red-flags-relationship-goals
+[debug] [2025-06-29T20:45:04.311Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-06-29T20:45:04.312Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/red-flags-relationship-goals
+[debug] [2025-06-29T20:45:04.879Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/runtimeconfig.googleapis.com 200
+[debug] [2025-06-29T20:45:04.879Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-06-29T20:45:04.922Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/cloudfunctions.googleapis.com 200
+[debug] [2025-06-29T20:45:04.923Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-06-29T20:45:04.923Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:04.923Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:45:04.923Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-06-29T20:45:04.924Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/red-flags-relationship-goals
+[debug] [2025-06-29T20:45:05.724Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-06-29T20:45:05.724Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/red-flags-relationship-goals/services/cloudfunctions.googleapis.com:enable [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2025-06-29T20:50:45.413Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:50:45.413Z] Checked if tokens are valid: true, expires at: 1751232741489
+[debug] [2025-06-29T20:50:45.413Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/red-flags-relationship-goals [none]
+[debug] [2025-06-29T20:50:45.848Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/red-flags-relationship-goals 200
+[debug] [2025-06-29T20:50:45.849Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/red-flags-relationship-goals {"projectId":"red-flags-relationship-goals","projectNumber":"848551520539","displayName":"Red Flags Relationship Goals","name":"projects/red-flags-relationship-goals","resources":{"hostingSite":"red-flags-relationship-goals"},"state":"ACTIVE","etag":"1_969b923e-4264-4bf8-aaf6-fce16a492090"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-06-29T20:52:45.095Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-06-29T20:52:45.469Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-06-29T20:52:45.471Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.9.1","browserURL":"https://www.gstatic.com/firebasejs/11.9.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.9.1/firebase.tgz"},"live":{"version":"11.9","browserURL":"https://www.gstatic.com/firebasejs/live/11.9/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.9/firebase.tgz"},"components":{"ai":"https://www.gstatic.com/firebasejs/11.9.1/firebase-ai.js","analytics":"https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.9.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.9.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.9.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.9.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.9.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.9.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.9.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.9.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.9.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.9.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.9.1/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.9.1/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\inava\online-game\frontend is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=441028495&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-06-29T20:57:40.352Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2025-06-29T20:57:40.352Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2025-06-29T20:57:40.730Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2025-06-29T20:57:40.732Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2025-06-29T20:57:40.779Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2025-06-29T20:57:41.289Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2025-06-29T20:57:41.290Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"inavatordb","id":218512010,"node_id":"U_kgDODQY6ig","avatar_url":"https://avatars.githubusercontent.com/u/218512010?v=4","gravatar_id":"","url":"https://api.github.com/users/inavatordb","html_url":"https://github.com/inavatordb","followers_url":"https://api.github.com/users/inavatordb/followers","following_url":"https://api.github.com/users/inavatordb/following{/other_user}","gists_url":"https://api.github.com/users/inavatordb/gists{/gist_id}","starred_url":"https://api.github.com/users/inavatordb/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/inavatordb/subscriptions","organizations_url":"https://api.github.com/users/inavatordb/orgs","repos_url":"https://api.github.com/users/inavatordb/repos","events_url":"https://api.github.com/users/inavatordb/events{/privacy}","received_events_url":"https://api.github.com/users/inavatordb/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2025-06-29T20:57:27Z","updated_at":"2025-06-29T20:57:32Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as inavatordb 
+[info] 
+[debug] [2025-06-29T20:59:03.627Z] >>> [apiv2][query] GET https://api.github.com/repos/inavatordb/online-game/actions/secrets/public-key type=owner
+[debug] [2025-06-29T20:59:03.908Z] <<< [apiv2][status] GET https://api.github.com/repos/inavatordb/online-game/actions/secrets/public-key 404
+[debug] [2025-06-29T20:59:03.908Z] <<< [apiv2][body] GET https://api.github.com/repos/inavatordb/online-game/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
